@@ -1,12 +1,12 @@
 package com.examly.springapp;
 
-// import javax.presistence.Entity;
-// import javax.presistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-// @Entity
+@Entity
 public class User {
     
-    //@Id
+    @Id
     private String email;
     private String password;
     private String mobileNumber;
@@ -23,4 +23,30 @@ public class User {
     {
         super();
     }
+    public String getEmail()
+    {
+        return email;
+    }
+    public String getMobileNumber()
+    {
+        return mobileNumber;
+    }
+    public String getRole()
+    {
+        return role;
+    }
+    public String getPassword()
+    {
+        return password;
+    }
+    public void setEmail(String email)
+    {
+        this.email=email;
+    }
+    public void setMobileNumber(String mobileNumber)
+    {
+        this.mobileNumber=mobileNumber;
+    }
+    
+    
 }
