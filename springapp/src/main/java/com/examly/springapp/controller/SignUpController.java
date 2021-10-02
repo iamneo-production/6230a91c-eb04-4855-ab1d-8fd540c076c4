@@ -1,5 +1,8 @@
-package com.examly.springapp;
+package com.examly.springapp.controller;
 import java.util.List;
+
+import com.examly.springapp.repository.UserDao;
+import com.examly.springapp.models.User;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

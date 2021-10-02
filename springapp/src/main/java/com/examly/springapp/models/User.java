@@ -1,4 +1,4 @@
-package com.examly.springapp;
+package com.examly.springapp.models;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -9,12 +9,16 @@ public class User {
     @Id
     private String email;
     private String password;
+    private String username;
     private String mobileNumber;
     private String role;
-    public User(String email,String password,String mobileNumber,String role)
+    private Boolean active;
+    public User(String email,String password,String username,String mobileNumber,String role)
     {
         super();
         this.email=email;
+        this.username=username;
+        this.active=false;
         this.password=password;
         this.mobileNumber=mobileNumber;
         this.role=role;
@@ -31,6 +35,9 @@ public class User {
     {
         return mobileNumber;
     }
+    public String getUsername(){
+        return username;
+    } 
     public String getRole()
     {
         return role;
@@ -43,10 +50,12 @@ public class User {
     {
         this.email=email;
     }
+    public void setUsername(String username)
+    {
+        this.username=username;
+    }
     public void setMobileNumber(String mobileNumber)
     {
         this.mobileNumber=mobileNumber;
     }
-    
-    
 }
