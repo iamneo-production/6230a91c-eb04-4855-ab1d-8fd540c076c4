@@ -42,6 +42,14 @@ public class User {
     {
         return role;
     }
+    public Boolean getActive()
+    {
+        return active;
+    }
+    public void setActive(Boolean active)
+    {
+        this.active=active;
+    }
     public String getPassword()
     {
         return password;
@@ -57,5 +65,9 @@ public class User {
     public void setMobileNumber(String mobileNumber)
     {
         this.mobileNumber=mobileNumber;
+    }
+    public void setRole(String role)
+    {
+        this.role=role;
     }
 }
