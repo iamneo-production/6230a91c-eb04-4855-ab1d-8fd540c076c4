@@ -13,8 +13,7 @@ public class User {
     private String mobileNumber;
     private String role;
     private Boolean active;
-    public User(String email,String password,String username,String mobileNumber,String role)
-    {
+    public User(String email,String password,String username,String mobileNumber,String role){
         super();
         this.email=email;
         this.username=username;
